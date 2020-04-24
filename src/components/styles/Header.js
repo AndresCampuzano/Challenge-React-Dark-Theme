@@ -1,3 +1,7 @@
+import { createGlobalStyle } from 'styled-components';
+
+export const HeaderStyles = createGlobalStyle`
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -18,4 +22,4 @@
 	font-weight: bold;
 	margin-top: 8px;
 	color: var(--DesaturatedBlue-Text-color);
-}
+}`;
