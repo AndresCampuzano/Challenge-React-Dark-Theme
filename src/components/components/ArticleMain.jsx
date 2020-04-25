@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArticleMainStyles } from '../styles/ArticleMain';
 import { MediaStyles } from '../styles/Media';
+import arrowUpImage from '../images/icon-up.svg';
+import arrowDownImage from '../images/icon-down.svg';
 
 const ArticleMain = (props) => {
 	const {
@@ -13,7 +15,7 @@ const ArticleMain = (props) => {
 	} = props;
 
 	return (
-		<article className='article'>
+		<article className={`article ${type}`}>
 			<ArticleMainStyles />
 			<MediaStyles />
 			<div className='article--social'>
@@ -26,11 +28,25 @@ const ArticleMain = (props) => {
 			</div>
 			<div className='article--followers'>
 				<p className='article--followers-number'>{followersNumber}</p>
-				<p className='article--followers-title'>FOLLOWERS</p>
+				{type === 'Youtube' ? (
+					<p className='article--followers-title'>SUBSCRIBERS</p>
+				) : (
+					<p className='article--followers-title'>FOLLOWERS</p>
+				)}
 			</div>
 			<div className='article--alert'>
-				<span className='article--alert-arrow'>{alertArrow}</span>
-				<p className='article--alert-update'>{alertUpdate} Today</p>
+				{alertArrow === true ? (
+					<img src={arrowUpImage} alt='arrow image' />
+				) : (
+					<img src={arrowDownImage} alt='arrow image' />
+				)}
+				{alertArrow === true ? (
+					<p className='article--alert-update green'>
+						{alertUpdate} Today
+					</p>
+				) : (
+					<p className='article--alert-update red'> {alertUpdate} Today</p>
+				)}
 			</div>
 		</article>
 	);

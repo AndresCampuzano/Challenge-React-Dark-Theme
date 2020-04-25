@@ -20,6 +20,7 @@ export const lightTheme = {
 	brightRed: 'hsl(365, 69%, 56%)',
 	Facebook: 'hsl(195, 100%, 50%)',
 	Twitter: 'hsl(203, 89%, 53%)',
+	InstagramBG: '#ea887d',
 	Instagram: 'linear-gradient(0.25turn, #fdc468, #df4996)',
 	Youtube: 'hsl(348, 97%, 39%)',
 	test01: 'hsl(365, 69%, 56%)',

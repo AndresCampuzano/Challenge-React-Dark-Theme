@@ -4,7 +4,7 @@ export const ArticleMainStyles = createGlobalStyle`
 
 .article {
 	background-color: ${({ theme }) => theme.backgroundCard};
-	border-top: 3px solid ${({ theme }) => theme.Facebook};
+	position: relative;
 	width: 255px;
 	min-width: 255px;
 	height: 200px;
@@ -16,6 +16,54 @@ export const ArticleMainStyles = createGlobalStyle`
 	align-items: center;
 	margin: 5px auto;
 }
+
+.Facebook::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 4px;
+	background-color:  ${({ theme }) => theme.Facebook};
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.Twitter::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 4px;
+	background-color: ${({ theme }) => theme.Twitter};
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.Instagram::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 4px;
+	background-color: ${({ theme }) => theme.InstagramBG};
+	background: ${({ theme }) => theme.Instagram};
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.Youtube::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 4px;
+	background-color: ${({ theme }) => theme.Youtube};
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
 .article:hover {
 	background-color: ${({ theme }) => theme.backgroundCardHover};
 	cursor: pointer;
@@ -55,4 +103,16 @@ export const ArticleMainStyles = createGlobalStyle`
 	flex-direction: row;
 	color: var(--limeGreen-color);
 	font-weight: bold;
+}
+
+.article--alert img {
+	object-fit: contain;
+}
+
+.green {
+	color: ${({ theme }) => theme.limeGreen};
+}
+
+.red {
+	color: ${({ theme }) => theme.brightRed};
 }`;

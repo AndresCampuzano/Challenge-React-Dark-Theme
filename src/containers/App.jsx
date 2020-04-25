@@ -38,7 +38,7 @@ function App() {
 					type='Facebook'
 					socialAccount='@nathanf'
 					followersNumber='1987'
-					alertArrow='↑'
+					alertArrow={true}
 					alertUpdate='12'
 				/>
 				<ArticleMain
@@ -46,7 +46,7 @@ function App() {
 					type='Twitter'
 					socialAccount='@nathanf'
 					followersNumber='1044'
-					alertArrow='↑'
+					alertArrow={true}
 					alertUpdate='99'
 				/>
 				<ArticleMain
@@ -54,7 +54,7 @@ function App() {
 					type='Instagram'
 					socialAccount='@realnathanf'
 					followersNumber='11k'
-					alertArrow='↑'
+					alertArrow={true}
 					alertUpdate='1099'
 				/>
 				<ArticleMain
@@ -62,7 +62,7 @@ function App() {
 					type='Youtube'
 					socialAccount='Nathan F.'
 					followersNumber='8239'
-					alertArrow='↓'
+					alertArrow={false}
 					alertUpdate='144'
 				/>
 			</Main>
