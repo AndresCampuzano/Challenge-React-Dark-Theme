@@ -28,10 +28,30 @@ function App() {
 			<GlobalStyles />
 			<Header propTheme={toggleTheme} />
 			<Main>
-				<ArticleMain />
-				<ArticleMain />
-				<ArticleMain />
-				<ArticleMain />
+				<ArticleMain
+					socialAccount='@nathanf'
+					followersNumber='1987'
+					alertArrow='↑'
+					alertUpdate='12'
+				/>
+				<ArticleMain
+					socialAccount='@nathanf'
+					followersNumber='1044'
+					alertArrow='↑'
+					alertUpdate='99'
+				/>
+				<ArticleMain
+					socialAccount='@realnathanf'
+					followersNumber='11k'
+					alertArrow='↑'
+					alertUpdate='1099'
+				/>
+				<ArticleMain
+					socialAccount='Nathan F.'
+					followersNumber='8239'
+					alertArrow='↓'
+					alertUpdate='144'
+				/>
 			</Main>
 			<OverviewTitle />
 			<OverviewContainer>

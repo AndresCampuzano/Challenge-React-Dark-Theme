@@ -136,6 +136,6 @@ table {
   font-family: 'Inter', Helvetica, Arial, Verdana, sans-serif;
 	color: ${({ theme }) => theme.colorText};
 	background-color: ${({ theme }) => theme.background};
-  transition: all 0.25s linear;
+  transition: all 0.15s linear;
   }
 `;

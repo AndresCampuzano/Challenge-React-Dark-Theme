@@ -26,6 +26,6 @@ export const darkTheme = {
 	colorText: '#000000',
 	Background: 'hsl(0, 0%, 100%)',
 	backgroundCard: 'hsl(227, 47%, 96%)',
-	backgroundCardHover: 'hsl(232, 19%, 15%)',
+	backgroundCardHover: 'hsl(230, 22%, 74%)',
 	desaturateColor: 'hsla(229, 27%, 28%, 0.993)',
 };
