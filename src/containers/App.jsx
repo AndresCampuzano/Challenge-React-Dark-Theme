@@ -35,6 +35,7 @@ function App() {
 			<Main>
 				<ArticleMain
 					socialImage={FacebookImage}
+					type='Facebook'
 					socialAccount='@nathanf'
 					followersNumber='1987'
 					alertArrow='↑'
@@ -42,6 +43,7 @@ function App() {
 				/>
 				<ArticleMain
 					socialImage={TwitterImage}
+					type='Twitter'
 					socialAccount='@nathanf'
 					followersNumber='1044'
 					alertArrow='↑'
@@ -49,6 +51,7 @@ function App() {
 				/>
 				<ArticleMain
 					socialImage={InstagramImage}
+					type='Instagram'
 					socialAccount='@realnathanf'
 					followersNumber='11k'
 					alertArrow='↑'
@@ -56,6 +59,7 @@ function App() {
 				/>
 				<ArticleMain
 					socialImage={YoutubeImage}
+					type='Youtube'
 					socialAccount='Nathan F.'
 					followersNumber='8239'
 					alertArrow='↓'

@@ -1,4 +1,4 @@
-export const lightTheme = {
+export const darkTheme = {
 	gradient: 'linear-gradient(#39598A, #79D7ED)',
 	limeGreen: 'hsl(163, 72%, 41%)',
 	brightRed: 'hsl(365, 69%, 56%)',
@@ -14,7 +14,7 @@ export const lightTheme = {
 	desaturateColor: 'hsl(228, 34%, 66%)',
 };
 
-export const darkTheme = {
+export const lightTheme = {
 	gradient: 'linear-gradient(#091236, #1E215D)',
 	limeGreen: 'hsl(163, 72%, 41%)',
 	brightRed: 'hsl(365, 69%, 56%)',

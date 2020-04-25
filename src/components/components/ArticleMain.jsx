@@ -9,7 +9,9 @@ const ArticleMain = (props) => {
 		alertArrow,
 		alertUpdate,
 		socialImage,
+		type,
 	} = props;
+
 	return (
 		<article className='article'>
 			<ArticleMainStyles />
@@ -17,7 +19,7 @@ const ArticleMain = (props) => {
 			<div className='article--social'>
 				<img
 					src={socialImage}
-					alt='facebook'
+					alt={socialAccount}
 					className='article--social-image'
 				/>
 				<p className='article--social-account'>{socialAccount}</p>
