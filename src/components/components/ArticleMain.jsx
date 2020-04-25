@@ -1,13 +1,25 @@
 import React from 'react';
 import { ArticleMainStyles } from '../styles/ArticleMain';
+import { MediaStyles } from '../styles/Media';
 
 const ArticleMain = (props) => {
-	const { socialAccount, followersNumber, alertArrow, alertUpdate } = props;
+	const {
+		socialAccount,
+		followersNumber,
+		alertArrow,
+		alertUpdate,
+		socialImage,
+	} = props;
 	return (
 		<article className='article'>
 			<ArticleMainStyles />
+			<MediaStyles />
 			<div className='article--social'>
-				<img src='xxx' alt='facebook' className='article--social-image' />
+				<img
+					src={socialImage}
+					alt='facebook'
+					className='article--social-image'
+				/>
 				<p className='article--social-account'>{socialAccount}</p>
 			</div>
 			<div className='article--followers'>

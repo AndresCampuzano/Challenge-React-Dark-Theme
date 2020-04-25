@@ -28,6 +28,10 @@ export const ArticleMainStyles = createGlobalStyle`
 	font-weight: bold;
 }
 
+.article--social img {
+	margin-right: 10px;
+}
+
 .article--followers {
 	display: flex;
 	flex-direction: column;
@@ -42,7 +46,7 @@ export const ArticleMainStyles = createGlobalStyle`
 }
 
 .article--followers-title {
-	color: var(--DesaturatedBlue-Text-color);
+	color: ${({ theme }) => theme.desaturateColor};
 }
 
 .article--alert {

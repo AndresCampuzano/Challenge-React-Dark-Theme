@@ -13,7 +13,7 @@ export const ArticleSmallStyles = createGlobalStyle`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 5px auto;
+	margin: 15px auto;
 }
 
 .articleSmall:hover {
@@ -21,27 +21,29 @@ export const ArticleSmallStyles = createGlobalStyle`
 	cursor: pointer;
 }
 
+.articleSmall--numbers,
 .articleSmall--text {
+	width: 100%;
 	display: flex;
-	margin-bottom: 25px;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .articleSmall--text-title {
-	margin-right: 48px;
-}
-
-.articleSmall--numbers {
-	justify-content: right;
+	margin-bottom: 20px;
+	color: ${({ theme }) => theme.desaturateColor};
+	font-weight: bold;
 }
 
 .articleSmall--numbers-number {
-	margin-right: 170px;
-}
-
-.articleSmall--numbers {
-	display: flex;
+	font-weight: bold;
+	font-size: 35px;
+	/* margin-right: 120px; */
 }
 
 .articleSmall--numbers-percept {
-	color: var(--limeGreen-color);
-}`;
+	color: ${({ theme }) => theme.limeGreen};
+}
+
+
+`;
