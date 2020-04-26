@@ -22,4 +22,67 @@ export const HeaderStyles = createGlobalStyle`
 	font-weight: bold;
 	margin-top: 8px;
 	color: var(--DesaturatedBlue-Text-color);
-}`;
+}
+
+/* button */
+
+.toggle__label {
+	display: flex;
+	margin-right: 15px;
+
+	color: var(--secondary-color);
+	font-weight: 700;
+}
+
+/* @media (max-width: 630px) {
+	.toggle__label {
+		justify-content: space-between;
+	}
+} */
+
+.toggle__input {
+	opacity: 0;
+	position: absolute;
+	height: 0;
+	width: 0;
+}
+
+.toggle__switch {
+	position: relative;
+	display: inline-block;
+	margin-left: 15px;
+	height: 24px;
+	width: 48px;
+
+	cursor: pointer;
+
+	background: grey;
+	border-radius: 12px;
+}
+
+  /* .toggle__switch:hover {
+	background: red;
+}  */
+
+.toggle__switch::before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	height: 18px;
+	width: 18px;
+
+	background-color: white;
+	border-radius: 50%;
+	transition: transform 150ms ease-in-out;
+}
+
+ /* Animation effect */
+
+
+   .switcher::before {
+	transform: translateX(calc(100% + 6px));
+}  
+
+
+`;

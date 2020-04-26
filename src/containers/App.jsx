@@ -31,7 +31,7 @@ function App() {
 	return (
 		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
 			<GlobalStyles />
-			<Header propTheme={toggleTheme} />
+			<Header propToggleTheme={toggleTheme} propTheme={theme} />
 			<Main>
 				<ArticleMain
 					socialImage={FacebookImage}
@@ -72,48 +72,56 @@ function App() {
 					textTitle='Page Views'
 					socialImage={FacebookImage}
 					articleSmallNumbers='87'
+					arrowUp={true}
 					numbersPercent='3'
 				/>
 				<ArticleSmall
 					textTitle='Likes'
 					socialImage={FacebookImage}
 					articleSmallNumbers='52'
+					arrowUp={false}
 					numbersPercent='2'
 				/>
 				<ArticleSmall
 					textTitle='Likes'
 					socialImage={InstagramImage}
 					articleSmallNumbers='5462'
+					arrowUp={true}
 					numbersPercent='2257'
 				/>
 				<ArticleSmall
 					textTitle='Profile Views'
 					socialImage={InstagramImage}
 					articleSmallNumbers='52k'
+					arrowUp={true}
 					numbersPercent='1375'
 				/>
 				<ArticleSmall
 					textTitle='Retweets'
 					socialImage={TwitterImage}
 					articleSmallNumbers='117'
+					arrowUp={true}
 					numbersPercent='303'
 				/>
 				<ArticleSmall
 					textTitle='Likes'
 					socialImage={TwitterImage}
 					articleSmallNumbers='507'
+					arrowUp={true}
 					numbersPercent='3553'
 				/>
 				<ArticleSmall
 					textTitle='Likes'
 					socialImage={YoutubeImage}
 					articleSmallNumbers='107'
+					arrowUp={false}
 					numbersPercent='10'
 				/>
 				<ArticleSmall
 					textTitle='Total Views'
 					socialImage={YoutubeImage}
 					articleSmallNumbers='1407'
+					arrowUp={false}
 					numbersPercent='12'
 				/>
 			</OverviewContainer>

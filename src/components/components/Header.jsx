@@ -1,7 +1,15 @@
 import React from 'react';
 import { HeaderStyles } from '../styles/Header';
 
-const Header = ({ propTheme }) => {
+const Header = ({ propToggleTheme, propTheme }) => {
+	const changeColorSwitcher = () => {
+		if (propTheme === 'light') {
+			return '';
+		} else {
+			return 'switcher';
+		}
+	};
+
 	return (
 		<header className='header'>
 			<HeaderStyles />
@@ -10,9 +18,20 @@ const Header = ({ propTheme }) => {
 				<p className='header--heading-followers'>Total Followers: 23,004</p>
 			</div>
 			<div className='button'>
-				<label className='switch-wrap'>
-					<button onClick={propTheme}>Toggle theme</button>
-				</label>
+				<div className='toggleButton'>
+					<label className='toggle__label'>
+						Dark Mode
+						<input
+							id='mode'
+							className='toggle__input'
+							type='checkbox'
+							onClick={propToggleTheme}
+						/>
+						<span
+							className={`toggle__switch ${changeColorSwitcher()}`}
+						></span>
+					</label>
+				</div>
 			</div>
 		</header>
 	);

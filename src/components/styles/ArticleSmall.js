@@ -35,6 +35,13 @@ export const ArticleSmallStyles = createGlobalStyle`
 	font-weight: bold;
 }
 
+.articleSmall--numbers div {
+	display: flex;
+}
+
+.articleSmall--numbers div img{
+	object-fit: contain;
+}
 .articleSmall--numbers-number {
 	font-weight: bold;
 	font-size: 35px;
@@ -43,7 +50,13 @@ export const ArticleSmallStyles = createGlobalStyle`
 
 .articleSmall--numbers-percept {
 	color: ${({ theme }) => theme.limeGreen};
+	font-weight: bold;
 }
 
+.green {
+	color: ${({ theme }) => theme.limeGreen};
+}
 
-`;
+.red {
+	color: ${({ theme }) => theme.brightRed};
+}`;

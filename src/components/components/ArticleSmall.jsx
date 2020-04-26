@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArticleSmallStyles } from '../styles/ArticleSmall';
 import { MediaStyles } from '../styles/Media';
+import arrowUpImage from '../images/icon-up.svg';
+import arrowDownImage from '../images/icon-down.svg';
 
 const ArticleSmall = (props) => {
 	const {
@@ -8,6 +10,7 @@ const ArticleSmall = (props) => {
 		articleSmallNumbers,
 		numbersPercent,
 		socialImage,
+		arrowUp,
 	} = props;
 	return (
 		<article className='articleSmall'>
@@ -25,7 +28,22 @@ const ArticleSmall = (props) => {
 				<p className='articleSmall--numbers-number'>
 					{articleSmallNumbers}
 				</p>
-				<p className='articleSmall--numbers-percept'>{numbersPercent}%</p>
+				<div>
+					{arrowUp ? (
+						<img src={arrowUpImage} alt='arrow image' />
+					) : (
+						<img src={arrowDownImage} alt='arrow image' />
+					)}
+					{arrowUp ? (
+						<p className='articleSmall--numbers-percept green'>
+							{numbersPercent}%
+						</p>
+					) : (
+						<p className='articleSmall--numbers-percept red'>
+							{numbersPercent}%
+						</p>
+					)}
+				</div>
 			</div>
 		</article>
 	);
