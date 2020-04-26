@@ -3,6 +3,7 @@
 ## Welcome! 👋
 
 **To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
+[Live Demo](https://andrescampuzano.github.io/Challenge-React-Dark-Theme/)
 
 ![test](https://raw.githubusercontent.com/AndresCampuzano/Challenge-React-Dark-Theme/master/src/components/github_images/desktop-preview.jpg)
 
