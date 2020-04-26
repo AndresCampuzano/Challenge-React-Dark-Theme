@@ -95,6 +95,7 @@ export const ArticleMainStyles = createGlobalStyle`
 
 .article--followers-title {
 	color: ${({ theme }) => theme.desaturateColor};
+	letter-spacing: 4px;
 }
 
 .article--alert {

@@ -1,22 +1,6 @@
-export const darkTheme = {
-	gradient: 'linear-gradient(#39598A, #79D7ED)',
-	limeGreen: 'hsl(163, 72%, 41%)',
-	brightRed: 'hsl(365, 69%, 56%)',
-	Facebook: 'hsl(195, 100%, 50%)',
-	Twitter: 'hsl(203, 89%, 53%)',
-	Instagram: 'linear-gradient(0.25turn, #fdc468, #df4996)',
-	Youtube: 'hsl(348, 97%, 39%)',
-	colorText: 'hsl(0, 0%, 100%)',
-	toggleLight: 'hsl(230, 22%, 74%)',
-	background: 'hsl(230, 17%, 14%)',
-	backgroundCard: 'hsl(228, 28%, 20%)',
-	backgroundCardHover: 'hsla(229, 27%, 28%, 0.993)',
-	desaturateColor: 'hsl(228, 34%, 66%)',
-	switcher: '',
-};
-
 export const lightTheme = {
-	gradient: 'linear-gradient(#091236, #1E215D)',
+	gradient: 'hsl(230, 22%, 74%)',
+	gradientHover: 'linear-gradient(#39598A, #79D7ED)',
 	limeGreen: 'hsl(163, 72%, 41%)',
 	brightRed: 'hsl(365, 69%, 56%)',
 	Facebook: 'hsl(195, 100%, 50%)',
@@ -31,4 +15,22 @@ export const lightTheme = {
 	backgroundCardHover: 'hsl(230, 22%, 74%)',
 	desaturateColor: 'hsla(229, 27%, 28%, 0.993)',
 	switcher: 'switcher',
+};
+
+export const darkTheme = {
+	gradient: 'linear-gradient(#39598A, #79D7ED)',
+	gradientHover: 'linear-gradient(#39598A, #79D7ED)',
+	limeGreen: 'hsl(163, 72%, 41%)',
+	brightRed: 'hsl(365, 69%, 56%)',
+	Facebook: 'hsl(195, 100%, 50%)',
+	Twitter: 'hsl(203, 89%, 53%)',
+	Instagram: 'linear-gradient(0.25turn, #fdc468, #df4996)',
+	Youtube: 'hsl(348, 97%, 39%)',
+	colorText: 'hsl(0, 0%, 100%)',
+	toggleLight: 'hsl(230, 22%, 74%)',
+	background: 'hsl(230, 17%, 14%)',
+	backgroundCard: 'hsl(228, 28%, 20%)',
+	backgroundCardHover: 'hsla(229, 27%, 28%, 0.993)',
+	desaturateColor: 'hsl(228, 34%, 66%)',
+	switcher: '',
 };

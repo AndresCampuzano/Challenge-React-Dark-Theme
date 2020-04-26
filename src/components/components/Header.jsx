@@ -4,9 +4,9 @@ import { HeaderStyles } from '../styles/Header';
 const Header = ({ propToggleTheme, propTheme }) => {
 	const changeColorSwitcher = () => {
 		if (propTheme === 'light') {
-			return '';
-		} else {
 			return 'switcher';
+		} else {
+			return '';
 		}
 	};
 

@@ -21,7 +21,7 @@ export const HeaderStyles = createGlobalStyle`
 	font-size: 16px;
 	font-weight: bold;
 	margin-top: 8px;
-	color: var(--DesaturatedBlue-Text-color);
+	color: ${({ theme }) => theme.desaturateColor};
 }
 
 /* button */
@@ -30,15 +30,9 @@ export const HeaderStyles = createGlobalStyle`
 	display: flex;
 	margin-right: 15px;
 
-	color: var(--secondary-color);
+	color: ${({ theme }) => theme.desaturateColor};
 	font-weight: 700;
 }
-
-/* @media (max-width: 630px) {
-	.toggle__label {
-		justify-content: space-between;
-	}
-} */
 
 .toggle__input {
 	opacity: 0;
@@ -56,13 +50,14 @@ export const HeaderStyles = createGlobalStyle`
 
 	cursor: pointer;
 
-	background: grey;
+	background: ${({ theme }) => theme.gradient};
 	border-radius: 12px;
 }
 
-  /* .toggle__switch:hover {
-	background: red;
-}  */
+
+   .toggle__switch:hover {
+	background: ${({ theme }) => theme.gradientHover};
+}
 
 .toggle__switch::before {
 	content: '';
@@ -71,8 +66,7 @@ export const HeaderStyles = createGlobalStyle`
 	left: 3px;
 	height: 18px;
 	width: 18px;
-
-	background-color: white;
+	background-color: ${({ theme }) => theme.backgroundCard};
 	border-radius: 50%;
 	transition: transform 150ms ease-in-out;
 }
