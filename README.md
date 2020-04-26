@@ -1,14 +1,18 @@
 # Frontend Mentor - Social media dashboard with theme switcher
 
-![test](./design/desktop-preview.jpg)
-![test](./design/desktop-preview.jpg)
-![test](./design/desktop-preview.jpg)
-![test](./design/desktop-preview.jpg)
-![test](./design/desktop-preview.jpg)
-
 ## Welcome! 👋
 
 **To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
+
+![test](https://raw.githubusercontent.com/AndresCampuzano/Challenge-React-Dark-Theme/master/src/components/github_images/desktop-preview.jpg)
+
+![test](https://raw.githubusercontent.com/AndresCampuzano/Challenge-React-Dark-Theme/master/src/components/github_images/active-states-light.jpg)
+
+![test](https://raw.githubusercontent.com/AndresCampuzano/Challenge-React-Dark-Theme/master/src/components/github_images/desktop-design-dark.jpg)
+
+![test](https://raw.githubusercontent.com/AndresCampuzano/Challenge-React-Dark-Theme/master/src/components/github_images/mobile-design-dark.jpg)
+
+![test](https://raw.githubusercontent.com/AndresCampuzano/Challenge-React-Dark-Theme/master/src/components/github_images/mobile-design-light.jpg)
 
 ## The challenge
 
