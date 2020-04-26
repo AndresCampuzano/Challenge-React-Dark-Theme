@@ -1,4 +1,4 @@
-# Frontend Mentor - Social media dashboard with theme switcher
+# Frontend Mentor - Social media dashboard with theme switcher using React
 
 ## Welcome! 👋
 
