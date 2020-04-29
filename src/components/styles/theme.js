@@ -15,6 +15,7 @@ export const lightTheme = {
 	backgroundCardHover: 'hsl(230, 22%, 74%)',
 	desaturateColor: 'hsla(229, 27%, 28%, 0.993)',
 	switcher: 'switcher',
+	lineColor: 'hsl(230, 17%, 14%)',
 };
 
 export const darkTheme = {
@@ -33,4 +34,5 @@ export const darkTheme = {
 	backgroundCardHover: 'hsla(229, 27%, 28%, 0.993)',
 	desaturateColor: 'hsl(228, 34%, 66%)',
 	switcher: '',
+	lineColor: 'hsl(230, 22%, 74%)',
 };

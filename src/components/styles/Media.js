@@ -3,8 +3,17 @@ import { createGlobalStyle } from 'styled-components';
 export const MediaStyles = createGlobalStyle`
 
 @media (max-width: 1035px) {
+
+	.header {
+		width: 95%;
+	}
+
 	.article {
 		width: 45%;
+	}
+
+	.overview--title {
+		width: 95%;
 	}
 
 	.articleSmall {
@@ -19,12 +28,13 @@ export const MediaStyles = createGlobalStyle`
 		display: flex;
 		flex-direction: column;
 		height: auto;
+		width: 90%;
 	}
 
 	.header--heading {
 		padding-bottom: 30px;
 		width: 90%;
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid ${({ theme }) => theme.lineColor};
 	}
 
 	.button {
@@ -52,9 +62,17 @@ export const MediaStyles = createGlobalStyle`
 }
 
 @media (max-width: 530px) {
-	
+
+	.header {
+		width: 98%;
+	}
+
 	.article {
 		width: 90%;
+	}
+	.overview--title {
+		width: 90%;
+
 	}
 	.articleSmall {
 		width: 90%;
