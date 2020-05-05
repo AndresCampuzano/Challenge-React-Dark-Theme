@@ -137,4 +137,5 @@ table {
 	color: ${({ theme }) => theme.colorText};
 	background-color: ${({ theme }) => theme.background};
   transition: all 0.15s linear;
+  margin: auto 5% ;
   }`;

@@ -4,6 +4,10 @@ export const MediaStyles = createGlobalStyle`
 
 @media (max-width: 1035px) {
 
+	body {
+		margin: 0 ;
+	}
+
 	.header {
 		width: 95%;
 	}
